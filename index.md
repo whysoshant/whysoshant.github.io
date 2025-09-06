@@ -8,10 +8,14 @@ header:
   overlay_filter: 0.30
 ---
 
-## About
 
-Software developer in Singapore with academic interests in **AI** and **machine learning**.  
-I write to learn in public—sharing concise notes, experiments, and ideas as I go.
+## About Me
+I’m a software developer based in Singapore with research interests in **artificial intelligence** and **machine learning**.  
+I use this site to share concise notes, experiments, and reflections as I learn.  
+
+- **Currently exploring:** supervised/unsupervised learning, evaluation, small projects.  
+- **Broader interests:** system design to support ML applications.  
+- **Fun fact:** passionate FC Barcelona fan.
 
 ---
 
