@@ -14,7 +14,12 @@ header:
 
 ## About
 
-I’m a software developer in Singapore with academic interests in **AI** and **machine learning**. I use this site to share concise notes, experiments, and ideas as I learn.
+I’m a software developer based in Singapore with research interests in **artificial intelligence** and **machine learning**.  
+I’m curious about how intelligent systems are designed and built, and I use this site to share concise notes, experiments, and ideas as I learn.
+
+- Currently exploring: supervised/unsupervised learning basics, evaluation, small-scale experiments.
+- Broader interests: pragmatic system design to support ML applications.
+- Fun fact: passionate **FC Barcelona** fan.
 
 <!-- Icon-only social row -->
 <div class="social-inline" style="margin: 0.75rem 0 1.25rem 0; font-size: 1.5rem;">
