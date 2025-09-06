@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : Prashant Rai
+title                    : 
 title_separator          : 
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Prashant Rai"
-description              : 
+description              : "A space to share what I learn and explore"
 url                      : "https://whysoshant.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,27 +115,27 @@ analytics:
 author:
   name             : "Prashant Rai"
   avatar           : /assets/images/PR.jpeg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "I’m a software developer in Singapore who loves exploring AI, machine learning, and how complex systems are put together. I use this space to share what I’m learning and the ideas that excite me. When I’m not tinkering with tech, I’m cheering for FC Barcelona."
   location         : "Somewhere"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      url: "mailto:kprashantrai@gmail.com"
+    - label: "LinkedIn"
+      icon: "fas fa-brands fa-linkedin"
+      url: "https://linkedin.com/whysoshant"
+    #- label: "Twitter"
+      #icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+    #- label: "Facebook"
+      #icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+      url: "https://github.com/whysoshant"
+    #- label: "Instagram"
+      #icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
 # Site Footer
