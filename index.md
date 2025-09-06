@@ -3,11 +3,11 @@ layout: single
 title: "Prashant Rai"
 permalink: /
 author_profile: false
-sidebar_sticky: false 
+sidebar_sticky: false        # <— add this
 sidebar:
   - image: /assets/images/PR.jpeg
     image_alt: "Prashant Rai"
-    image_size: 240
+    image_size: 260          # <— bump size (200–300 works)
     text: |
       <div class="home-social">
         <a href="mailto:kprashantrai@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
