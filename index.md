@@ -6,6 +6,9 @@ author_profile: false
 header:
   image: /assets/images/Messi_Resilience1.jpg
   caption: ""
+  overlay_filter: 0.3       # optional dark overlay
+  teaser: /assets/images/Messi_Resilience1.jpg
+
 ---
 
 
