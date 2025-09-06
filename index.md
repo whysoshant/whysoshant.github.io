@@ -9,14 +9,14 @@ header:
 intro:
   - excerpt: "Software developer in Singapore exploring AI and machine learning. I write to learn in public."
 feature_row:
-  - image_path: /assets/images/projects.jpg
+  - image_path: /assets/images/projects.png
     alt: "Projects"
     title: "Projects"
     excerpt: "Mini-projects, experiments, and notes."
     url: "/projects/"
     btn_label: "View Projects"
     btn_class: "btn--primary"
-  - image_path: /assets/images/blog.jpg
+  - image_path: /assets/images/blog.png
     alt: "Blog"
     title: "Blog"
     excerpt: "Posts about AI, learning, and exploration."
