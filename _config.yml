@@ -7,26 +7,21 @@ description: "A space to share what I learn and explore"
 url: "https://whysoshant.github.io"
 baseurl: ""
 
-# Build / theme
+# Jekyll core
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
 timezone: Asia/Singapore
 
-# Plugins (GitHub Pages compatible)
+# GitHub Pages–compatible plugins (NO jekyll-paginate here)
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-seo-tag
 
-# Pagination (Blog under /blog/)
-paginate: 5
-paginate_path: /blog/page:num/
-
-# Author box (shows on posts)
+# Author box (used on posts)
 author:
   name: "Prashant Rai"
   avatar: /assets/images/PR.jpeg
@@ -46,6 +41,64 @@ author:
 # Build includes
 include:
   - _pages
+
+# EXCLUDE theme sample content and build-noise
+exclude:
+  - docs
+  - CHANGELOG.md
+  - README.md
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - minimal-mistakes-jekyll.gemspec
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Markdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Archives (optional links at /tags/ and /categories/)
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
 # Collections
 collections:
@@ -73,16 +126,3 @@ defaults:
       author_profile: false
       read_time: false
       share: true
-
-# Archives pages (optional links at /tags/ and /categories/)
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-
-# Sass
-sass:
-  sass_dir: _sass
-  style: compressed
