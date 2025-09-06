@@ -4,7 +4,7 @@ title: "Prashant Rai"
 permalink: /
 author_profile: false
 header:
-  overlay_image: /assets/images/Messi_Resilience.jpg   # change if you like
+  overlay_image: /assets/images/Messi_Resilience.jpg
   overlay_filter: 0.35
 ---
 
@@ -13,15 +13,17 @@ header:
 I’m a software developer in Singapore with academic interests in **AI** and **machine learning**. I use this site to share concise notes, experiments, and ideas as I learn.
 
 <!-- Icon-only social row -->
-<p style="margin: 0.75rem 0 1.25rem 0;">
-  <a href="mailto:kprashantrai@gmail.com" aria-label="Email" class="no-mark">
-    <i class="fas fa-envelope fa-lg" style="margin-right: 10px;"></i>
+<p style="margin: 0.75rem 0 1.25rem 0; font-size: 1.5rem;">
+  <a href="mailto:kprashantrai@gmail.com" aria-label="Email">
+    <i class="fas fa-envelope"></i>
   </a>
-  <a href="https://www.linkedin.com/in/whysoshant/" target="_blank" rel="noopener" aria-label="LinkedIn" class="no-mark">
-    <i class="fab fa-linkedin fa-lg" style="margin-right: 10px;"></i>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/whysoshant/" target="_blank" rel="noopener" aria-label="LinkedIn">
+    <i class="fab fa-linkedin"></i>
   </a>
-  <a href="https://github.com/whysoshant" target="_blank" rel="noopener" aria-label="GitHub" class="no-mark">
-    <i class="fab fa-github fa-lg"></i>
+  &nbsp;&nbsp;
+  <a href="https://github.com/whysoshant" target="_blank" rel="noopener" aria-label="GitHub">
+    <i class="fab fa-github"></i>
   </a>
 </p>
 
