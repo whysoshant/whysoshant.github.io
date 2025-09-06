@@ -3,6 +3,7 @@ layout: single
 title: "Prashant Rai"
 permalink: /
 author_profile: false
+sidebar_sticky: false 
 sidebar:
   - image: /assets/images/PR.jpeg
     image_alt: "Prashant Rai"
