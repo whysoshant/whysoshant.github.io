@@ -4,7 +4,7 @@ title: "Prashant Rai"
 permalink: /
 author_profile: false
 header:
-  image: /assets/images/Messi_Resilience.jpg
+  image: /assets/images/Messi_Resilience1.jpg
   caption: ""
 ---
 
