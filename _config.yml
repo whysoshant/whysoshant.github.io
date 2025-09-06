@@ -138,6 +138,11 @@ author:
       #icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
+#header
+header:
+  image: /assets/images/Messi_Resilience.jpg
+  
+
 # Site Footer
 footer:
   links:
