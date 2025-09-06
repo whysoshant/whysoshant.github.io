@@ -1,38 +1,11 @@
-/* ==== Disable sticky sidebar globally (theme uses .sidebar / .sidebar__inner) ==== */
-.sidebar,
-.sidebar.sticky,
-.sidebar__inner {
-  position: static !important;
-  top: auto !important;
-}
+/* Keep splash hero reasonable */
+.page__hero--overlay { height: 320px; }
+.page__hero--overlay .wrapper { padding-top: 0.75rem; padding-bottom: 0.75rem; }
 
-/* ==== Sidebar photo (bigger, rounded, subtle shadow) ==== */
-.sidebar img {
-  width: 260px;            /* adjust 200–300 as you like */
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;     /* use 50% for a circle */
-  box-shadow: 0 6px 16px rgba(0,0,0,.12);
-  display: block;
-  margin-bottom: 12px;
-}
+/* OPTIONAL: hide the big title text over the hero
+   (remove these 2 lines if you want the title visible) */
+.layout--splash .page__hero--overlay .page__title { display: none; }
 
-/* ==== Icon-only social row under photo ==== */
-.home-social { margin-top: 6px; }
-.home-social a {
-  text-decoration: none;
-  margin-right: 14px;
-  display: inline-flex;
-  align-items: center;
-}
-.home-social a:last-child { margin-right: 0; }
-.home-social i {
-  font-size: 1.35rem;
-  opacity: .9;
-  transition: transform .15s ease, opacity .15s ease;
-}
-.home-social a:hover i { transform: translateY(-1px); opacity: 1; }
-
-/* Optional: if you ever add a header image on single layout, keep it short */
-.page__hero { max-height: 300px; overflow: hidden; }
-.page__hero img { width: 100%; height: 100%; object-fit: cover; }
+/* Small polish for lists under Recent sections */
+.page__content ul { margin-top: 0.5rem; }
+.page__content .archive__item-excerpt { margin-top: 2px; color: var(--gray); }
