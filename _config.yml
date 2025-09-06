@@ -126,3 +126,8 @@ defaults:
       author_profile: false
       read_time: false
       share: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      css: "/assets/css/custom.css"
