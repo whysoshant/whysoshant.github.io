@@ -1,5 +1,4 @@
-
-  ---
+---
 layout: single
 title: "Prashant Rai"
 permalink: /
