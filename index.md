@@ -4,39 +4,14 @@ title: "Prashant Rai"
 permalink: /
 author_profile: false
 header:
-  overlay_image: /assets/images/banner.jpg   # <-- use a wide banner (2400x1000px works best)
-  overlay_filter: 0.3
-intro:
-  - excerpt: "Software developer in Singapore exploring AI and machine learning. I write to learn in public."
-feature_row:
-  - image_path: /assets/images/projects.jpg
-    alt: "Projects"
-    title: "Projects"
-    excerpt: "Mini-projects, experiments, and notes."
-    url: "/projects/"
-    btn_label: "View Projects"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/blog.jpg
-    alt: "Blog"
-    title: "Blog"
-    excerpt: "Posts about AI, learning, and exploration."
-    url: "/blog/"
-    btn_label: "Read Blog"
-    btn_class: "btn--primary"
+  overlay_image: /assets/images/Messi_Resilience1.jpg   # <-- make sure this file exists
+  overlay_filter: 0.30
 ---
 
-{% include feature_row id="intro" type="center" %}
-{% include feature_row %}
+## About
 
----
-
-## About Me
-I’m a software developer based in Singapore with research interests in **artificial intelligence** and **machine learning**.  
-I use this site to share concise notes, experiments, and reflections as I learn.  
-
-- **Currently exploring:** supervised/unsupervised learning, evaluation, small projects.  
-- **Broader interests:** system design to support ML applications.  
-- **Fun fact:** passionate FC Barcelona fan.
+Software developer in Singapore with academic interests in **AI** and **machine learning**.  
+I write to learn in public—sharing concise notes, experiments, and ideas as I go.
 
 ---
 
