@@ -2,10 +2,10 @@
 layout: splash
 title: "Hi, I'm Prashant"
 permalink: /
+author_profile: false
 header:
-  overlay_image: /assets/images/Messi_Resilience.jpg   # homepage hero
+  overlay_image: /assets/images/Messi_Resilience.jpg   # change if you like
   overlay_filter: 0.35
-  caption: "Photo credit: add source"
 intro:
   - excerpt: "Software developer in Singapore exploring AI and machine learning. I write to learn in public."
 feature_row:
