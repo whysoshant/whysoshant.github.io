@@ -1,12 +1,14 @@
----
-layout: splash
+
+  ---
+layout: single
 title: "Prashant Rai"
 permalink: /
 author_profile: false
 header:
-  overlay_image: /assets/images/Messi_Resilience1.jpg
-  overlay_filter: 0.35
+  image: /assets/images/Messi_Resilience.jpg
+  caption: ""
 ---
+
 
 ## About
 
