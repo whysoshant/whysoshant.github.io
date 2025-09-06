@@ -2,12 +2,11 @@
 layout: single
 title: "Prashant Rai"
 permalink: /
-author_profile: false        # keep the blog-style card off
-sidebar_sticky: true         # sidebar stays fixed as you scroll
-# Custom sidebar content (appears on the LEFT)
+author_profile: false
 sidebar:
   - image: /assets/images/PR.jpeg
     image_alt: "Prashant Rai"
+    image_size: 240
     text: |
       <div class="home-social">
         <a href="mailto:kprashantrai@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
@@ -15,6 +14,7 @@ sidebar:
         <a href="https://github.com/whysoshant" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
       </div>
 ---
+
 
 ## About
 
