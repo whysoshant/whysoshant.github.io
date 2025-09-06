@@ -1,30 +1,42 @@
 ---
-layout: single
+layout: splash
 title: "Prashant Rai"
 permalink: /
 author_profile: false
-sidebar_sticky: false        # <— add this
-sidebar:
-  - image: /assets/images/PR.jpeg
-    image_alt: "Prashant Rai"
-    image_size: 260          # <— bump size (200–300 works)
-    text: |
-      <div class="home-social">
-        <a href="mailto:kprashantrai@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/whysoshant/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/whysoshant" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      </div>
+header:
+  overlay_image: /assets/images/banner.jpg   # <-- use a wide banner (2400x1000px works best)
+  overlay_filter: 0.3
+intro:
+  - excerpt: "Software developer in Singapore exploring AI and machine learning. I write to learn in public."
+feature_row:
+  - image_path: /assets/images/projects.jpg
+    alt: "Projects"
+    title: "Projects"
+    excerpt: "Mini-projects, experiments, and notes."
+    url: "/projects/"
+    btn_label: "View Projects"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/blog.jpg
+    alt: "Blog"
+    title: "Blog"
+    excerpt: "Posts about AI, learning, and exploration."
+    url: "/blog/"
+    btn_label: "Read Blog"
+    btn_class: "btn--primary"
 ---
 
+{% include feature_row id="intro" type="center" %}
+{% include feature_row %}
 
-## About
+---
 
+## About Me
 I’m a software developer based in Singapore with research interests in **artificial intelligence** and **machine learning**.  
-I’m curious about how intelligent systems are designed and built, and I use this site to share concise notes, experiments, and ideas as I learn.
+I use this site to share concise notes, experiments, and reflections as I learn.  
 
-- **Currently exploring:** supervised/unsupervised learning basics, evaluation, small-scale experiments.  
-- **Broader interests:** pragmatic system design to support ML applications.  
-- **Fun fact:** passionate **FC Barcelona** fan.
+- **Currently exploring:** supervised/unsupervised learning, evaluation, small projects.  
+- **Broader interests:** system design to support ML applications.  
+- **Fun fact:** passionate FC Barcelona fan.
 
 ---
 
@@ -33,7 +45,7 @@ I’m curious about how intelligent systems are designed and built, and I use th
 {% for post in site.posts limit:5 %}
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <span class="page__meta" style="margin-left:6px;">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <span class="page__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
   </li>
 {% endfor %}
 </ul>
@@ -48,10 +60,10 @@ I’m curious about how intelligent systems are designed and built, and I use th
   <li>
     <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
     {%- if project.date -%}
-      <span class="page__meta" style="margin-left:6px;">{{ project.date | date: "%b %-d, %Y" }}</span>
+      <span class="page__meta">{{ project.date | date: "%b %-d, %Y" }}</span>
     {%- endif -%}
     {%- if project.excerpt -%}
-      <div class="archive__item-excerpt" style="margin-top:2px;">{{ project.excerpt }}</div>
+      <div class="archive__item-excerpt">{{ project.excerpt }}</div>
     {%- endif -%}
   </li>
 {%- endfor -%}
