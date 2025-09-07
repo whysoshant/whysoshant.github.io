@@ -1,69 +1,23 @@
-/* === Show the FULL hero image (no crop, always full width with 3:1 ratio) ========== */
+/* --- Splash hero: show the full image, no cropping --- */
 .layout--splash .page__hero--overlay {
-  background-size: contain !important;      /* show whole image, don't crop */
+  background-size: contain !important;    /* show whole image */
   background-repeat: no-repeat;
   background-position: center center;
-  aspect-ratio: 2048 / 683;                 /* prefer aspect-ratio for modern browsers */
-  width: 100%;
-  min-height: 33.36vw !important;           /* fallback: 2048/683 = 3:1 */
-  height: auto !important;
-  padding: 0 !important;
-  box-shadow: none;
-  border: none;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  margin-top: 0 !important;
-  z-index: 1;
+
+  /* keep container at the image's ratio so no letterboxing appears */
+  aspect-ratio: 2048 / 683;               /* Messi_Success.jpeg */
+  height: auto;
+  padding: 0;
 }
 
-/* Fallback for older browsers that don't support aspect-ratio */
+/* Fallback for older browsers without aspect-ratio */
 @supports not (aspect-ratio: 1 / 1) {
   .layout--splash .page__hero--overlay {
-    min-height: 33.36vw !important;
+    position: relative;
+    height: 0;
+    padding-top: calc(683 / 2048 * 100%); /* = 33.36% of width */
   }
 }
 
-/* Hide big overlay title/subtitle on hero image (optional) */
-.layout--splash .page__hero--overlay .page__title,
-.layout--splash .page__hero--overlay .page__lead {
-  display: none !important;
-}
-
-/* === Top menu FLOATING OVER the banner (transparent) =================== */
-.masthead {
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: transparent !important;
-  box-shadow: none !important;
-  z-index: 100;
-}
-
-.masthead__inner-wrap {
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-.masthead a,
-.masthead nav a {
-  color: #fff !important;
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4); /* optional: better contrast over image */
-}
-
-/* Removes possible unwanted padding/margins around hero in splash */
-.page__hero, .layout--splash .wrapper {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* === Small typography and spacing polish ==================== */
-.page__content ul {
-  margin-top: 0.5rem;
-}
-.page__content .archive__item-excerpt {
-  margin-top: 2px;
-  opacity: .8;
-}
+/* Hide the large overlay title text on the hero */
+.layout--splash .page__hero--overlay .page__title { display: none; }
