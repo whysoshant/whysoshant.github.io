@@ -1,7 +1,7 @@
 /* --- Splash hero height + framing --- */
 .page__hero--overlay {
   /* Taller banner */
-  height: 460px;                 /* try 420–520 if you want more/less */
+  height: 520px;                 /* try 420–520 if you want more/less */
   /* Reframe the crop (X% Y%): move Y up/down to choose what's visible */
   background-position: 50% 35%;
 }
