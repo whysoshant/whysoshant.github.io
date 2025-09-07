@@ -8,11 +8,6 @@ header:
   overlay_filter: 0.0
 ---
 
-<!-- Full-width banner image -->
-<div class="page__hero--overlay">
-  <img src="/assets/images/Messi_Success.jpeg" alt="Messi Success" class="full-banner" />
-</div>
-
 
 ## About Me
 I’m a software developer based in Singapore with research interests in **artificial intelligence** and **machine learning**.  
