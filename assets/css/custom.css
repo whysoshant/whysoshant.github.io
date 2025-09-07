@@ -81,3 +81,59 @@
 .about-card li {
   margin: 0.4rem 0;
 }
+
+/* === Responsive About Card ======================================= */
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 2.5rem auto;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.about-card .about-image {
+  flex: 0 0 auto;
+}
+
+.about-card .about-rect {
+  width: 220px;     /* portrait size */
+  height: auto;
+  border-radius: 6px;  /* slightly rounded corners */
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.about-card .about-text {
+  flex: 1;
+}
+
+.about-card p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-card li {
+  margin: 0.4rem 0;
+}
+
+/* === Side-by-side layout on larger screens ====================== */
+@media (min-width: 768px) {
+  .about-card {
+    flex-direction: row;        /* image left, text right */
+    align-items: flex-start;
+    text-align: left;
+  }
+  .about-card .about-text {
+    padding-left: 2rem;
+  }
+}
+
