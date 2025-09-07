@@ -13,8 +13,8 @@ sitemap: false            # optional: keep it out of your sitemap.xml
   <h1 class="cv-title">CV / Résumé</h1>
 
   <p class="cv-note">
-    Thanks for your interest! I keep my full CV private.
-    If you’d like a copy, please reach out and I’ll share it directly.
+    Thanks for your interest!
+    If you’d like a copy of my CV, please reach out and I’ll share it directly.
   </p>
 
   <div class="cv-actions">
