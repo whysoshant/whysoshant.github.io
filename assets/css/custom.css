@@ -36,6 +36,13 @@
 .layout--splash .site-title {
   color: #fff !important;   /* white text over hero image */
 }
+/* global tweak for dates beside titles */
+.page__meta {
+  margin-left: 6px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
 
 /* === REMOVE EXTRA TOP PADDING ========================================= */
 .layout--splash .initial-content {
