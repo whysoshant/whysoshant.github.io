@@ -4,7 +4,7 @@ title: "Prashant Rai"
 permalink: /
 author_profile: false
 header:
-  overlay_image: /assets/images/Messi_Success.jpg   # <-- make sure this file exists
+  overlay_image: /assets/images/Messi_Success.jpeg   # <-- make sure this file exists
   overlay_filter: 0.30
 ---
 
