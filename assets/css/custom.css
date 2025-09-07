@@ -1,8 +1,8 @@
 /* === HERO IMAGE (Splash Layout) ======================================= */
 .layout--splash .page__hero--overlay {
-  background-size: cover !important;       /* fill width */
+  background-size: cover !important;
   background-position: center center !important;
-  height: 500px;                           /* adjust 400–600px as you like */
+  height: 500px;                           /* adjust as needed */
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
@@ -10,27 +10,31 @@
 .layout--splash .page__hero--overlay::after {
   display: none !important;                /* remove overlay filters */
 }
-/* hide big title text over hero */
 .layout--splash .page__hero--overlay .page__title {
-  display: none !important;
+  display: none !important;                /* hide the big hero title */
 }
 
 /* === NAV ON TOP OF HERO =============================================== */
 .layout--splash .masthead {
   position: absolute !important;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100%;
-  background: transparent !important;      /* no grey box */
+  z-index: 1000;
   box-shadow: none !important;
   border: none !important;
-  z-index: 1000;
 }
 .layout--splash .masthead__inner-wrap {
   background: transparent !important;
+  box-shadow: none !important;
 }
 
-/* White nav links over image */
+/* Target the actual nav bar element */
+.layout--splash .greedy-nav {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* White nav links and site title */
 .layout--splash .masthead a,
 .layout--splash .masthead nav a,
 .layout--splash .site-title {
@@ -42,7 +46,3 @@
   padding-top: 0 !important;
   margin-top: 0 !important;
 }
-
-/* === RECENT SECTIONS POLISH =========================================== */
-.page__content ul { margin-top: 0.5rem; }
-.page__content .archive__item-excerpt { margin-top: 2px; opacity: 0.85; }
