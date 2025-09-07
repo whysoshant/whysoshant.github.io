@@ -26,6 +26,11 @@ header:
       <li><strong>Broader interests:</strong> pragmatic system design to support ML applications.</li>
       <li><strong>Fun fact:</strong> passionate <strong>FC Barcelona</strong> fan 💙❤️.</li>
     </ul>
+    <div class="about-social">
+      <a href="mailto:kprashantrai@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/whysoshant/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/whysoshant" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+  </div>
   </div>
 </div>
 
