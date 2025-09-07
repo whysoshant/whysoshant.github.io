@@ -1,31 +1,33 @@
-/* === Hero Banner: Show full image, no crop === */
-.page__hero--overlay {
-  height: auto !important;
-  background: none !important;
-  padding: 0 !important;
-}
+/* === Show the FULL hero image (no crop) ================================ */
+/* Your banner is 2048x683 ≈ 3:1. Use that ratio so 'contain' fills perfectly. */
+.layout--splash .page__hero--overlay {
+  /* size & positioning */
+  background-size: contain !important;   /* show whole image */
+  background-repeat: no-repeat;
+  background-position: center center;
 
-.page__hero--overlay::before,
-.page__hero--overlay::after {
-  display: none !important; /* remove overlay filter */
-}
-
-.page__hero--overlay .wrapper {
-  padding: 0;
-  margin: 0;
-}
-
-/* Inject the image as normal <img> so it scales fully */
-.page__hero--overlay {
-  position: relative;
-}
-.page__hero--overlay img.full-banner {
-  display: block;
-  width: 100%;
+  /* keep a fixed aspect ratio so there are no gray bars */
+  aspect-ratio: 2048 / 683;              /* modern browsers */
   height: auto;
+  padding: 0;
 }
 
-/* === Put top nav/menu inside banner === */
+/* (Fallback for older browsers that ignore aspect-ratio) */
+@supports not (aspect-ratio: 1 / 1) {
+  .layout--splash .page__hero--overlay {
+    position: relative;
+    height: 0;
+    padding-top: calc(683 / 2048 * 100%);  /* 33.36% height of width */
+  }
+}
+
+/* Hide the big overlay title/subtitle on the hero */
+.layout--splash .page__hero--overlay .page__title,
+.layout--splash .page__hero--overlay .page__lead {
+  display: none;
+}
+
+/* === Put the top nav over the banner =================================== */
 .masthead {
   position: absolute;
   top: 0;
@@ -35,10 +37,9 @@
   box-shadow: none !important;
   z-index: 10;
 }
-.masthead__inner-wrap {
-  background: transparent !important;
-}
-.masthead a,
-.masthead nav a {
-  color: #fff !important;   /* white text over banner */
-}
+.masthead__inner-wrap { background: transparent !important; }
+.masthead a, .masthead nav a { color: #fff !important; } /* white links over image */
+
+/* Small polish */
+.page__content ul { margin-top: 0.5rem; }
+.page__content .archive__item-excerpt { margin-top: 2px; opacity: .8; }
