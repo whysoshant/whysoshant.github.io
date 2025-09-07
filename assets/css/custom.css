@@ -123,32 +123,28 @@
 }
 
 /* --- CV landing page (no public content) --- */
-.cv-landing {
-  max-width: 760px;
-  margin: 2rem auto 3rem;
-  text-align: center;
+.cv-landing{
+  max-width: 720px;
+  margin: 3rem auto 4rem;
+  text-align:center;
 }
-.cv-title {
-  margin-bottom: .5rem;
+.cv-title{
+  font-size:2rem;
+  font-weight:600;
+  margin-bottom:1rem;
 }
-.cv-note {
-  font-size: 1.05rem;
-  opacity: .95;
-  margin: 0 auto 1.25rem;
+.cv-note{
+  font-size:1.05rem;
+  opacity:.95;
+  margin-bottom:1.5rem;
 }
-.cv-actions {
-  display: flex;
-  justify-content: center;
-  gap: .75rem;
-  margin-bottom: 1rem;
+.cv-actions{
+  display:flex;
+  justify-content:center;
+  gap:1rem;
 }
-.cv-actions .btn { padding: .55rem 1rem; }
-.cv-actions .btn-outline {
-  border: 1px solid var(--mm-text, #333);
-  background: transparent;
-}
-.cv-hint {
-  font-size: .95rem;
-  opacity: .8;
+.cv-actions .btn{
+  padding:.6rem 1.2rem;
+  font-size:.95rem;
 }
 
