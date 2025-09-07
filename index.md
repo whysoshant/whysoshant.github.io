@@ -22,7 +22,7 @@ header:
       site to share concise notes, experiments, and ideas as I learn.
     </p>
     <ul>
-      <li><strong>Currently exploring:</strong> supervised/unsupervised learning basics, neural networks, linear algebra.</li>
+      <li><strong>Currently exploring:</strong> supervised/unsupervised learning, neural networks, linear algebra.</li>
       <li><strong>Broader interests:</strong> pragmatic system design to support ML applications.</li>
       <li><strong>Fun fact:</strong> passionate <strong>FC Barcelona</strong> fan 💙❤️.</li>
     </ul>
