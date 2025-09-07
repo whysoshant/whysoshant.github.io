@@ -12,10 +12,9 @@ sitemap: false            # optional: keep it out of your sitemap.xml
 <div class="cv-landing">
   <h1 class="cv-title">CV / Résumé</h1>
 
-  <p class="cv-note">
-    Thanks for your interest!<br/>
-    If you’d like a copy of my CV, please reach out and I’ll share it directly.
-  </p>
+  <p class="cv-note">Thanks for your interest!</p>
+  <p class="cv-note">If you’d like a copy of my CV, please reach out and I’ll share it directly.</p>
+
 
   <div class="cv-actions">
     <a class="btn" href="mailto:kprashantrai@gmail.com?subject=Request%20for%20CV&body=Hi%20Prashant%2C%0A%0AI%27d%20like%20to%20request%20a%20copy%20of%20your%20CV.%0A%0AThanks!">
