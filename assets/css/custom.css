@@ -186,3 +186,32 @@
 .initial-content, .page__hero--overlay, .page__footer {
   opacity: 1 !important; filter: none !important;
 }
+
+/* ============================================================
+   About Section – Social Icons row
+   ============================================================ */
+.about-social {
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;   /* desktop: left align under text */
+}
+
+.about-social a {
+  font-size: 1.4rem;
+  color: #444;
+  transition: color .2s ease, transform .2s ease;
+}
+
+.about-social a:hover {
+  color: #111;
+  transform: translateY(-2px);
+}
+
+/* On small screens: center icons */
+@media (max-width: 768px) {
+  .about-social {
+    justify-content: center;
+  }
+}
+
