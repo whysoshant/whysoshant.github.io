@@ -8,11 +8,12 @@ header:
   overlay_filter: 0.0
 ---
 
-
 ## About Me
 
 <div class="about-card">
-  <img src="/assets/images/PR.jpeg" alt="Prashant Rai" class="about-rect" />
+  <div class="about-image">
+    <img src="/assets/images/PR.jpeg" alt="Prashant Rai" class="about-rect" />
+  </div>
   <div class="about-text">
     <p>
       I’m a software developer based in Singapore with research interests in 
@@ -27,8 +28,6 @@ header:
     </ul>
   </div>
 </div>
-
-
 
 ---
 
