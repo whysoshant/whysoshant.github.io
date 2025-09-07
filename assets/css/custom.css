@@ -1,15 +1,10 @@
-/* --- Splash hero height + framing --- */
+/* --- Splash hero tweaks for wide banner --- */
 .page__hero--overlay {
-  /* Taller banner */
-  height: 520px;                 /* try 420–520 if you want more/less */
-  /* Reframe the crop (X% Y%): move Y up/down to choose what's visible */
-  background-position: 50% 35%;
+  height: 360px;                 /* 320–420 is a sweet spot */
+  background-position: center center; /* keep image centered */
+  background-size: cover;        /* fill width nicely */
 }
 
-/* Optional: tweak spacing inside the hero */
-.page__hero--overlay .wrapper {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.page__hero--overlay .page__title {
+  display: none; /* hide the big text over banner */
 }
-
-/* (Keep the rest of your CSS as-is below this) */
