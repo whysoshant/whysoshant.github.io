@@ -15,7 +15,7 @@ I use this site to share concise notes, experiments, and reflections as I learn.
 
 - **Currently exploring:** supervised/unsupervised learning, evaluation, small projects.  
 - **Broader interests:** system design to support ML applications.  
-- **Fun fact:** passionate FC Barcelona fan :blue_heart: :heart: .
+- **Fun fact:** passionate FC Barcelona fan 💙❤️.
 
 ---
 
