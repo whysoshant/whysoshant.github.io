@@ -27,18 +27,14 @@
   background: transparent !important;
   box-shadow: none !important;
 }
-
-/* Target the actual nav bar element */
 .layout--splash .greedy-nav {
   background: transparent !important;
   box-shadow: none !important;
 }
-
-/* White nav links and site title */
 .layout--splash .masthead a,
 .layout--splash .masthead nav a,
 .layout--splash .site-title {
-  color: #fff !important;
+  color: #fff !important;   /* white text over hero image */
 }
 
 /* === REMOVE EXTRA TOP PADDING ========================================= */
@@ -46,48 +42,13 @@
   padding-top: 0 !important;
   margin-top: 0 !important;
 }
-/* === About card centered under banner =========================== */
-.about-card {
-  text-align: center;
-  max-width: 750px;
-  margin: 2rem auto;
-}
 
-.about-card .about-rect {
-  width: 220px;          /* good portrait size */
-  height: auto;          /* keeps proportions */
-  border-radius: 6px;    /* slight rounding, not circular */
-  object-fit: cover;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-}
-
-.about-card .about-text {
-  text-align: center;
-}
-
-.about-card p {
-  font-size: 1.05rem;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
-.about-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.about-card li {
-  margin: 0.4rem 0;
-}
-
-/* === Responsive About Card ======================================= */
+/* === About card under banner ========================================== */
 .about-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 2.5rem auto;
   gap: 1.5rem;
   text-align: center;
@@ -98,9 +59,10 @@
 }
 
 .about-card .about-rect {
-  width: 220px;     /* portrait size */
+  max-width: 100%;
+  width: 100%;          /* fills its flex column */
   height: auto;
-  border-radius: 6px;  /* slightly rounded corners */
+  border-radius: 6px;   /* slight rounding, not circular */
   object-fit: cover;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
 }
@@ -125,15 +87,30 @@
   margin: 0.4rem 0;
 }
 
-/* === Side-by-side layout on larger screens ====================== */
+/* === Side-by-side on larger screens ================================== */
 @media (min-width: 768px) {
   .about-card {
     flex-direction: row;        /* image left, text right */
-    align-items: flex-start;
+    align-items: stretch;       /* equal height columns */
     text-align: left;
   }
+
+  .about-card .about-image {
+    flex: 0 0 35%;              /* ~35% width for image column */
+    display: flex;
+  }
+
+  .about-card .about-rect {
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+
   .about-card .about-text {
+    flex: 1;
     padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /* vertically center text */
   }
 }
-
