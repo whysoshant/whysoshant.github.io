@@ -109,10 +109,10 @@
 .cv-landing{
   max-width: 720px;
   margin: 0 auto;
-  min-height: 60vh;                 /* centers vertically on most screens */
+  min-height: calc(100vh - 240px);   /* header+footer allowance */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center;           /* vertical center */
   align-items: center;
   text-align: center;
 }
@@ -134,6 +134,21 @@
 .cv-actions .btn{
   padding: .6rem 1.2rem;
   font-size: .95rem;
+}
+
+/* Horizontal centering fix */
+.cv-page .page__content { 
+  display: flex; 
+  justify-content: center; 
+}
+.cv-page .page__content .wrapper {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.cv-page .cv-landing {
+  width: min(720px, 100%);
+  margin-inline: auto !important;
+  text-align: center;
 }
 
 /* ============================================================
@@ -154,43 +169,20 @@
   }
 }
 
-/* Stop any dim/blur overlay when hamburger is open */
-.greedy-nav .hidden-links::before { display: none !important; }
-.initial-content,
-.page__hero--overlay,
-.page__footer {
-  opacity: 1 !important;
-  filter: none !important;
-}
-
-/* Make the dropdown look like a clean panel */
-.greedy-nav .hidden-links{
-  background: #fff !important;
-  box-shadow: 0 10px 24px rgba(0,0,0,.15) !important;
-  border-radius: 8px;
-}
-
-
-/* ===== FIX 1: Make hamburger dropdown links visible (dark text) ===== */
+/* Make dropdown look like a clean panel */
 .masthead .greedy-nav .hidden-links a {
   color: #111 !important;
 }
 .masthead .greedy-nav .hidden-links a:hover {
   color: #000 !important;
 }
-
-/* ===== FIX 2: Use a clean dropdown panel (no full-screen grey overlay) ===== */
-/* Stop any overlay/pseudo that dims the page */
 .greedy-nav .hidden-links::before,
 .greedy-nav .hidden-links::after {
   display: none !important;
 }
-
-/* Make the dropdown a compact panel under the header instead of a full overlay */
 .masthead .greedy-nav {
   position: relative;
 }
-
 .masthead .greedy-nav .hidden-links {
   position: absolute !important;
   top: 100%;
@@ -201,11 +193,9 @@
   padding: .5rem 0 !important;
   max-height: 65vh;
   overflow-y: auto;
-  width: 220px;                 /* nice panel width */
+  width: 220px;
   z-index: 2000;
 }
-
-/* Tidy each item */
 .masthead .greedy-nav .hidden-links li {
   display: block !important;
   padding: 0 !important;
@@ -216,56 +206,10 @@
   text-decoration: none;
 }
 
-/* Ensure the rest of the page never gets dimmed */
+/* Ensure page never gets dimmed */
 .initial-content,
 .page__hero--overlay,
 .page__footer {
   opacity: 1 !important;
   filter: none !important;
-}
-
-/* ===== FIX 3: Keep everything in the hamburger on small screens ===== */
-@media (max-width: 768px) {
-  .masthead .greedy-nav .visible-links {
-    flex: 0 0 0 !important;
-    max-width: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    overflow: hidden !important;
-  }
-  .masthead .greedy-nav__toggle {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-
-/* ===== FIX 4: Center the CV / Résumé section nicely ===== */
-.cv-landing{
-  max-width: 720px;
-  margin: 0 auto;
-  min-height: calc(100vh - 240px); /* header+footer allowance; tweak if needed */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical center */
-  align-items: center;
-  text-align: center;
-}
-.cv-title{
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 0 0 1rem 0;
-}
-.cv-note{
-  font-size: 1.05rem;
-  opacity: .95;
-  margin: 0 0 1.5rem 0;
-}
-.cv-actions{
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-.cv-actions .btn{
-  padding: .6rem 1.2rem;
-  font-size: .95rem;
 }
