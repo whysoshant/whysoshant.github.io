@@ -1,12 +1,17 @@
 ---
 layout: splash
-title:
+title: ""
 permalink: /
 author_profile: false
 header:
-  overlay_image: /assets/images/Messi_Success.jpeg   # <-- make sure this file exists
+  overlay_image: /assets/images/Messi_Success.jpeg
   overlay_filter: 0.0
 ---
+
+<!-- Full-width banner image -->
+<div class="page__hero--overlay">
+  <img src="/assets/images/Messi_Success.jpeg" alt="Messi Success" class="full-banner" />
+</div>
 
 
 ## About Me
