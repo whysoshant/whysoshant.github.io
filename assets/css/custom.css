@@ -1,14 +1,14 @@
 /* === HERO IMAGE (Splash Layout) ======================================= */
 .layout--splash .page__hero--overlay {
-  background-size: cover !important;    /* fill width, keep aspect */
-  background-position: center top !important;
-  height: 500px;                        /* adjust 400–600px as you like */
+  background-size: cover !important;       /* fill width */
+  background-position: center center !important;
+  height: 500px;                           /* adjust 400–600px as you like */
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 .layout--splash .page__hero--overlay::before,
 .layout--splash .page__hero--overlay::after {
-  display: none !important;             /* remove overlay filters */
+  display: none !important;                /* remove overlay filters */
 }
 /* hide big title text over hero */
 .layout--splash .page__hero--overlay .page__title {
@@ -21,7 +21,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: transparent !important;   /* transparent nav over image */
+  background: transparent !important;      /* no grey box */
   box-shadow: none !important;
   border: none !important;
   z-index: 1000;
@@ -29,9 +29,12 @@
 .layout--splash .masthead__inner-wrap {
   background: transparent !important;
 }
+
+/* White nav links over image */
 .layout--splash .masthead a,
-.layout--splash .masthead nav a {
-  color: #fff !important;               /* white nav links over image */
+.layout--splash .masthead nav a,
+.layout--splash .site-title {
+  color: #fff !important;
 }
 
 /* === REMOVE EXTRA TOP PADDING ========================================= */
