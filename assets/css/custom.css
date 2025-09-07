@@ -1,32 +1,30 @@
-/* === HERO IMAGE (Splash Layout) ======================================= */
+/* ============================================================
+   HERO (Splash layout – homepage banner)
+   ============================================================ */
 .layout--splash .page__hero--overlay {
   background-size: cover !important;
   background-position: center center !important;
-  height: 500px;                           /* adjust as needed */
+  height: 500px;                 /* tweak height if you want */
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 .layout--splash .page__hero--overlay::before,
 .layout--splash .page__hero--overlay::after {
-  display: none !important;                /* remove overlay filters */
+  display: none !important;      /* remove theme overlay filters */
 }
 .layout--splash .page__hero--overlay .page__title {
-  display: none !important;                /* hide the big hero title */
+  display: none !important;      /* hide big hero title */
 }
 
-/* === NAV ON TOP OF HERO =============================================== */
+/* Nav sits on top of hero, transparent */
 .layout--splash .masthead {
   position: absolute !important;
-  top: 0; left: 0;
-  width: 100%;
+  top: 0; left: 0; width: 100%;
   z-index: 1000;
   box-shadow: none !important;
   border: none !important;
 }
-.layout--splash .masthead__inner-wrap {
-  background: transparent !important;
-  box-shadow: none !important;
-}
+.layout--splash .masthead__inner-wrap,
 .layout--splash .greedy-nav {
   background: transparent !important;
   box-shadow: none !important;
@@ -34,23 +32,18 @@
 .layout--splash .masthead a,
 .layout--splash .masthead nav a,
 .layout--splash .site-title {
-  color: #fff !important;   /* white text over hero image */
-}
-/* global tweak for dates beside titles */
-.page__meta {
-  margin-left: 6px;
-  color: #666;
-  font-size: 0.9rem;
+  color: #fff !important;
 }
 
-
-/* === REMOVE EXTRA TOP PADDING ========================================= */
+/* Remove extra spacing under nav on splash */
 .layout--splash .initial-content {
   padding-top: 0 !important;
   margin-top: 0 !important;
 }
 
-/* === About card under banner ========================================== */
+/* ============================================================
+   ABOUT CARD (homepage)
+   ============================================================ */
 .about-card {
   display: flex;
   flex-direction: column;
@@ -60,91 +53,119 @@
   gap: 1.5rem;
   text-align: center;
 }
-
 .about-card .about-image {
   flex: 0 0 auto;
+  display: flex;
 }
-
 .about-card .about-rect {
   max-width: 100%;
-  width: 100%;          /* fills its flex column */
+  width: 100%;
   height: auto;
-  border-radius: 6px;   /* slight rounding, not circular */
+  border-radius: 6px;                 /* rectangular with soft corners */
   object-fit: cover;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
 }
-
 .about-card .about-text {
   flex: 1;
 }
-
 .about-card p {
   font-size: 1.05rem;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
+.about-card ul { list-style: none; padding: 0; margin: 0; }
+.about-card li { margin: 0.4rem 0; }
 
-.about-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.about-card li {
-  margin: 0.4rem 0;
-}
-
-/* === Side-by-side on larger screens ================================== */
 @media (min-width: 768px) {
   .about-card {
-    flex-direction: row;        /* image left, text right */
-    align-items: stretch;       /* equal height columns */
+    flex-direction: row;             /* image left, text right */
+    align-items: stretch;
     text-align: left;
   }
-
   .about-card .about-image {
-    flex: 0 0 35%;              /* ~35% width for image column */
-    display: flex;
+    flex: 0 0 35%;                   /* ~35% width column for photo */
   }
-
-  .about-card .about-rect {
-    width: 100%;
-    height: auto;
-    align-self: center;
-  }
-
   .about-card .about-text {
     flex: 1;
     padding-left: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;    /* vertically center text */
+    justify-content: center;         /* vertically center text */
   }
 }
 
-/* --- CV landing page (no public content) --- */
-.cv-landing{
-  max-width: 720px;
-  margin: 3rem auto 4rem;
-  text-align:center;
-}
-.cv-title{
-  font-size:2rem;
-  font-weight:600;
-  margin-bottom:1rem;
-}
-.cv-note{
-  font-size:1.05rem;
-  opacity:.95;
-  margin-bottom:1.5rem;
-}
-.cv-actions{
-  display:flex;
-  justify-content:center;
-  gap:1rem;
-}
-.cv-actions .btn{
-  padding:.6rem 1.2rem;
-  font-size:.95rem;
+/* ============================================================
+   GLOBAL: small gap between titles and dates
+   ============================================================ */
+.page__meta {
+  margin-left: 6px;
+  color: #666;
+  font-size: 0.9rem;
 }
 
+/* ============================================================
+   CV PAGE (centered landing with request button)
+   ============================================================ */
+.cv-landing{
+  max-width: 720px;
+  margin: 0 auto;
+  min-height: 60vh;                 /* centers vertically on most screens */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cv-title{
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+.cv-note{
+  font-size: 1.05rem;
+  opacity: .95;
+  margin: 0 0 1.5rem 0;
+}
+.cv-actions{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.cv-actions .btn{
+  padding: .6rem 1.2rem;
+  font-size: .95rem;
+}
+
+/* ============================================================
+   MOBILE NAV: put EVERYTHING in hamburger + remove grey dim
+   ============================================================ */
+@media (max-width: 768px) {
+  /* Force GreedyNav to move all items into the hidden list */
+  .masthead .greedy-nav .visible-links{
+    flex: 0 0 0 !important;
+    max-width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+  }
+  .masthead .greedy-nav__toggle{
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+
+/* Stop any dim/blur overlay when hamburger is open */
+.greedy-nav .hidden-links::before { display: none !important; }
+.initial-content,
+.page__hero--overlay,
+.page__footer {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+/* Make the dropdown look like a clean panel */
+.greedy-nav .hidden-links{
+  background: #fff !important;
+  box-shadow: 0 10px 24px rgba(0,0,0,.15) !important;
+  border-radius: 8px;
+}
