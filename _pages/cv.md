@@ -2,10 +2,11 @@
 layout: single
 title: ""                 # prevents the theme from auto-inserting a left H1
 permalink: /cv/
-classes: wide
+classes: cv-page
 author_profile: false
 robots: noindex           # optional: keep this page out of search results
 sitemap: false            # optional: keep it out of your sitemap.xml
+
 ---
 
 <div class="cv-landing">
