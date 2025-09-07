@@ -53,10 +53,7 @@
   gap: 1.5rem;
   text-align: center;
 }
-.about-card .about-image {
-  flex: 0 0 auto;
-  display: flex;
-}
+.about-card .about-image { flex: 0 0 auto; display: flex; }
 .about-card .about-rect {
   max-width: 100%;
   width: 100%;
@@ -65,14 +62,8 @@
   object-fit: cover;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
 }
-.about-card .about-text {
-  flex: 1;
-}
-.about-card p {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
+.about-card .about-text { flex: 1; }
+.about-card p { font-size: 1.05rem; line-height: 1.6; margin-bottom: 1rem; }
 .about-card ul { list-style: none; padding: 0; margin: 0; }
 .about-card li { margin: 0.4rem 0; }
 
@@ -82,9 +73,7 @@
     align-items: stretch;
     text-align: left;
   }
-  .about-card .about-image {
-    flex: 0 0 35%;                   /* ~35% width column for photo */
-  }
+  .about-card .about-image { flex: 0 0 35%; }   /* ~35% width column for photo */
   .about-card .about-text {
     flex: 1;
     padding-left: 2rem;
@@ -97,11 +86,7 @@
 /* ============================================================
    GLOBAL: small gap between titles and dates
    ============================================================ */
-.page__meta {
-  margin-left: 6px;
-  color: #666;
-  font-size: 0.9rem;
-}
+.page__meta { margin-left: 6px; color: #666; font-size: 0.9rem; }
 
 /* ============================================================
    CV PAGE (centered landing with request button)
@@ -116,73 +101,50 @@
   align-items: center;
   text-align: center;
 }
-.cv-title{
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 0 0 1rem 0;
-}
-.cv-note{
-  font-size: 1.05rem;
-  opacity: .95;
-  margin: 0 0 1.5rem 0;
-}
-.cv-actions{
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-.cv-actions .btn{
-  padding: .6rem 1.2rem;
-  font-size: .95rem;
-}
+.cv-title{ font-size: 2rem; font-weight: 600; margin: 0 0 1rem 0; }
+.cv-note{ font-size: 1.05rem; opacity: .95; margin: 0 0 1.5rem 0; }
+.cv-actions{ display: flex; justify-content: center; gap: 1rem; }
+.cv-actions .btn{ padding: .6rem 1.2rem; font-size: .95rem; }
 
-/* Horizontal centering fix */
-.cv-page .page__content { 
-  display: flex; 
-  justify-content: center; 
-}
+/* Horizontal centering fix (requires `classes: cv-page` on /cv/) */
+.cv-page .page__content { display: flex; justify-content: center; }
 .cv-page .page__content .wrapper {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-.cv-page .cv-landing {
-  width: min(720px, 100%);
-  margin-inline: auto !important;
-  text-align: center;
-}
+.cv-page .cv-landing { width: min(720px, 100%); margin-inline: auto !important; }
 
 /* ============================================================
-   MOBILE NAV: put EVERYTHING in hamburger + remove grey dim
+   MOBILE NAV (GreedyNav): hamburger on right, no dim overlay,
+   and force ALL items into the hamburger (Home/Blog/Projects/CV)
    ============================================================ */
-@media (max-width: 768px) {
-  /* Force GreedyNav to move all items into the hidden list */
-  .masthead .greedy-nav .visible-links{
-    flex: 0 0 0 !important;
-    max-width: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    overflow: hidden !important;
-  }
-  .masthead .greedy-nav__toggle{
-    display: block !important;
-    visibility: visible !important;
-  }
+
+/* 1) Move hamburger to the RIGHT */
+.masthead .greedy-nav {
+  display: flex;
+  align-items: center;
+}
+.masthead .greedy-nav .site-title { order: 1; }
+.masthead .greedy-nav .visible-links { order: 2; }
+.masthead .greedy-nav .greedy-nav__toggle {
+  order: 3;
+  margin-left: auto;                /* pushes toggle to right */
 }
 
-/* Make dropdown look like a clean panel */
-.masthead .greedy-nav .hidden-links a {
-  color: #111 !important;
-}
-.masthead .greedy-nav .hidden-links a:hover {
-  color: #000 !important;
+/* 2) Don’t dim/blur the page when the menu opens */
+.nav-open .initial-content,
+.nav-open .page__hero--overlay,
+.nav-open .page__footer {
+  opacity: 1 !important;
+  filter: none !important;
 }
 .greedy-nav .hidden-links::before,
 .greedy-nav .hidden-links::after {
   display: none !important;
 }
-.masthead .greedy-nav {
-  position: relative;
-}
+
+/* 3) Make the dropdown a clean panel (no fullscreen overlay) */
+.masthead .greedy-nav { position: relative; }
 .masthead .greedy-nav .hidden-links {
   position: absolute !important;
   top: 100%;
@@ -193,23 +155,34 @@
   padding: .5rem 0 !important;
   max-height: 65vh;
   overflow-y: auto;
-  width: 220px;
+  width: 240px;
   z-index: 2000;
 }
-.masthead .greedy-nav .hidden-links li {
-  display: block !important;
-  padding: 0 !important;
-}
-.masthead .greedy-nav .hidden-links a {
-  display: block;
-  padding: .6rem 1rem !important;
-  text-decoration: none;
+.masthead .greedy-nav .hidden-links li { display: block !important; padding: 0 !important; }
+.masthead .greedy-nav .hidden-links a { display: block; padding: .6rem 1rem !important; color: #111 !important; }
+.masthead .greedy-nav .hidden-links a:hover { color: #000 !important; }
+
+/* 4) **Force all items into the hamburger on small screens**.
+      Trick GreedyNav: make available width tiny so it moves everything. */
+@media (max-width: 768px) {
+  /* collapse the visible list so GreedyNav overflows and migrates items */
+  .masthead .greedy-nav .visible-links {
+    max-width: 1px !important;     /* small on purpose so JS moves all items */
+    overflow: hidden !important;
+  }
+  .masthead .greedy-nav__toggle {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  /* also hide the visible links just in case JS leaves any behind */
+  .masthead .greedy-nav .visible-links a {
+    pointer-events: none;
+    opacity: 0;
+  }
 }
 
-/* Ensure page never gets dimmed */
-.initial-content,
-.page__hero--overlay,
-.page__footer {
-  opacity: 1 !important;
-  filter: none !important;
+/* 5) Make sure the rest of the page never gets dimmed (safety) */
+.initial-content, .page__hero--overlay, .page__footer {
+  opacity: 1 !important; filter: none !important;
 }
