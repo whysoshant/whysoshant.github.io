@@ -1,11 +1,15 @@
-/* Keep splash hero reasonable */
-.page__hero--overlay { height: 320px; }
-.page__hero--overlay .wrapper { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+/* --- Splash hero height + framing --- */
+.page__hero--overlay {
+  /* Taller banner */
+  height: 460px;                 /* try 420–520 if you want more/less */
+  /* Reframe the crop (X% Y%): move Y up/down to choose what's visible */
+  background-position: 50% 35%;
+}
 
-/* OPTIONAL: hide the big title text over the hero
-   (remove these 2 lines if you want the title visible) */
-.layout--splash .page__hero--overlay .page__title { display: none; }
+/* Optional: tweak spacing inside the hero */
+.page__hero--overlay .wrapper {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 
-/* Small polish for lists under Recent sections */
-.page__content ul { margin-top: 0.5rem; }
-.page__content .archive__item-excerpt { margin-top: 2px; color: var(--gray); }
+/* (Keep the rest of your CSS as-is below this) */
