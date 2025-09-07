@@ -1,10 +1,44 @@
-/* --- Splash hero tweaks for wide banner --- */
+/* === Hero Banner: Show full image, no crop === */
 .page__hero--overlay {
-  height: 360px;                 /* 320–420 is a sweet spot */
-  background-position: center center; /* keep image centered */
-  background-size: cover;        /* fill width nicely */
+  height: auto !important;
+  background: none !important;
+  padding: 0 !important;
 }
 
-.page__hero--overlay .page__title {
-  display: none; /* hide the big text over banner */
+.page__hero--overlay::before,
+.page__hero--overlay::after {
+  display: none !important; /* remove overlay filter */
+}
+
+.page__hero--overlay .wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+/* Inject the image as normal <img> so it scales fully */
+.page__hero--overlay {
+  position: relative;
+}
+.page__hero--overlay img.full-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* === Put top nav/menu inside banner === */
+.masthead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent !important;
+  box-shadow: none !important;
+  z-index: 10;
+}
+.masthead__inner-wrap {
+  background: transparent !important;
+}
+.masthead a,
+.masthead nav a {
+  color: #fff !important;   /* white text over banner */
 }
