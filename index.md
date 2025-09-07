@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: "Prashant Rai"
+title:
 permalink: /
 author_profile: false
 header:
@@ -11,11 +11,11 @@ header:
 
 ## About Me
 I’m a software developer based in Singapore with research interests in **artificial intelligence** and **machine learning**.  
-I use this site to share concise notes, experiments, and reflections as I learn.  
+I’m curious about how intelligent systems are designed and built, and I use this site to share concise notes, experiments, and ideas as I learn.
 
-- **Currently exploring:** supervised/unsupervised learning, evaluation, small projects.  
-- **Broader interests:** system design to support ML applications.  
-- **Fun fact:** passionate FC Barcelona fan 💙❤️.
+- **Currently exploring:** supervised/unsupervised learning basics, neural networks, linear algebra.  
+- **Broader interests:** pragmatic system design to support ML applications.  
+- **Fun fact:** passionate **FC Barcelona** fan 💙❤️.
 
 ---
 
