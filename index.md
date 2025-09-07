@@ -4,7 +4,7 @@ title: "Prashant Rai"
 permalink: /
 author_profile: false
 header:
-  overlay_image: /assets/images/Messi_Resilience1.jpg   # <-- make sure this file exists
+  overlay_image: /assets/images/Messi_Success.jpg   # <-- make sure this file exists
   overlay_filter: 0.30
 ---
 
@@ -15,7 +15,7 @@ I use this site to share concise notes, experiments, and reflections as I learn.
 
 - **Currently exploring:** supervised/unsupervised learning, evaluation, small projects.  
 - **Broader interests:** system design to support ML applications.  
-- **Fun fact:** passionate FC Barcelona fan.
+- **Fun fact:** passionate FC Barcelona fan :blue_heart: :heart: .
 
 ---
 
