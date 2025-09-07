@@ -21,3 +21,30 @@
 
 /* Hide the large overlay title text on the hero */
 .layout--splash .page__hero--overlay .page__title { display: none; }
+
+/* === Put nav on top of hero banner === */
+.masthead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent !important;
+  box-shadow: none !important;
+  z-index: 1000; /* stays above hero */
+}
+
+.masthead__inner-wrap {
+  background: transparent !important;
+}
+
+/* White nav links over image */
+.masthead a,
+.masthead nav a {
+  color: #fff !important;
+}
+
+/* Optional: hide the big page title text on hero */
+.page__hero--overlay .page__title {
+  display: none;
+}
+
