@@ -16,7 +16,7 @@ header:
   </div>
   <div class="about-text">
     <p>
-      I’m a software developer based in Singapore with research interests in 
+      I’m a **software developer** based in Singapore with research interests in 
       <strong>artificial intelligence</strong> and <strong>machine learning</strong>.
       I’m curious about how intelligent systems are designed and built, and I use this 
       site to share concise notes, experiments, and ideas as I learn.
