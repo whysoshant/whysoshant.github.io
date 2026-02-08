@@ -1,10 +1,8 @@
 ---
-title: "Crop Revenue Prediction and Recommendation for Uttar Pradesh (WIP)"
+title: "Crop Revenue Prediction and Recommendation for Uttar Pradesh (WIP...)"
 date: 2026-01-11
 excerpt: "This project builds a district-level dataset for Uttar Pradesh and trains a regression model to predict revenue per hectare (yield × price), then ranks crops to suggest top options per district-season."
 ---
-
-## Crop Revenue Predictor and Crop Ranking System (Work in Progress)
 
 ### What I’m doing
 - Collecting and merging public datasets: crop area/production (to compute yield), seasonal weather (rainfall/temperature), and crop prices.
