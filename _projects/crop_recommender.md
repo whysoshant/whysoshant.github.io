@@ -11,7 +11,7 @@ excerpt: "This project builds a district-level dataset for Uttar Pradesh and tra
   - `revenue_per_hectare = yield_kg_per_hectare × price_inr_per_kg`
 - Feature engineering: seasonal aggregates (rainfall totals/means, temperature summaries) + simple lag/rolling features where possible.
 - Training a **Random Forest regressor** with time-based splits (train on older years, test on newer years).
-- Output: rank crops by predicted `revenue_per_ha` and return the **top 3** options per district-season.
+- Output: rank crops by predicted `revenue_per_hectare` and return the **top 3** options per district-season.
 
 ### Tech Stack Used
    *Python, pandas, NumPy, scikit-learn (RandomForestRegressor), matplotlib*
