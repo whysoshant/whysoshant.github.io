@@ -1,5 +1,6 @@
 ---
 title: "ML-Based DOM Article Block Classification for RSS Feed Generation"
+date: 2025-11-25
 excerpt: "This project crawls news websites, extracts article content from raw HTML using a trained DOM classifier, and generates RSS feeds — without per-site CSS selectors or hardcoded parsing rules"
 ---
 ## [ML-Based Article Classifier and RSS Generator](https://github.com/whysoshant/rssgen/blob/master/README.md)
