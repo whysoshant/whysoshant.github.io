@@ -120,7 +120,7 @@ defaults:
       share: true
   # Project items
   - scope:
-      path: ""
+      path: "_projects"
       type: projects
     values:
       layout: single
