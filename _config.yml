@@ -111,7 +111,7 @@ collections:
 defaults:
   # Blog posts
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       layout: single
