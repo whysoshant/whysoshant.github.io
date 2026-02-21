@@ -12,7 +12,9 @@ The motivation came from a real client requirement. During a solutioning discuss
 
 The problem stayed in my head. After work, I kept coming back to it as a learning challenge and it became my first end-to-end ML project that touched the full loop: data collection, labeling, feature design, training, evaluation, failure analysis, and iteration.
 
-Repo: https://github.com/whysoshant/rssgen
+
+[GitHub Repo](https://github.com/whysoshant/rssgen?tab=readme-ov-file#ml-based-dom-article-block-classification-for-rss-feed-generation)
+
 
 ---
 
