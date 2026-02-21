@@ -26,7 +26,7 @@ plugins:
 author:
   name: "Prashant Rai"
   avatar: /assets/images/PR.jpeg
-  bio: "Software developer in Singapore exploring AI/ML. I write to learn in public."
+  bio: "Software developer in Singapore exploring AI/ML. I write to learn."
   location: "Singapore"
   links:
     - label: "Email"
